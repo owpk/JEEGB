@@ -12,6 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.OptionalInt;
 
@@ -30,6 +31,7 @@ public class JDBCServlet extends HttpServlet {
         }
     }
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
@@ -41,12 +43,20 @@ public class JDBCServlet extends HttpServlet {
                 res[i] = new ArrayList<>();
             }
 
+            //print table ->
+            int colInd;
+            boolean flag = true;
             while (rs.next()) {
                 for (int i = 1; i <= columns; i++) {
-                    res[i-1].add(rs.getString(i));
+                    if (flag)
+                        res[i-1].add(rs.getMetaData().getColumnLabel(i));
+                    else
+                        res[i-1].add(rs.getString(i));
                 }
+                flag = false;
             }
 
+            resp.getWriter().write("<table border=\"1\">");
             for (ArrayList<String> re : res) {
                 OptionalInt opt = re.stream().filter(Objects::nonNull).mapToInt(String::length).max();
                 int length = opt.isPresent() ? opt.getAsInt() : "null".length();
@@ -67,15 +77,42 @@ public class JDBCServlet extends HttpServlet {
                 }
             }
 
-            int colInd = 0;
-            for (int i = 0; i < res[colInd++].size(); i++) {
-                if (colInd == columns)
-                    colInd = 0;
-                for (ArrayList<String> re : res) {
-                    resp.getWriter().write("<br>|" + re.get(i));
-                }
-                resp.getWriter().write("|</br>");
+            colInd = 0;
+            boolean canWrite;
+            String[] lines = new String[columns];
+            int ind = 0;
+
+            for (ArrayList<String> strings : res) {
+                StringBuilder line = new StringBuilder("+");
+                for (int j = 0; j < strings.get(0).length(); j++)
+                    line.append("-");
+                lines[ind] = line.toString();
+                if (ind == lines.length - 1)
+                    lines[ind] = lines[ind].concat("+");
+                ind++;
             }
+
+            int row = 0;
+            for (int i = 0; i < res[colInd].size(); i++) {
+                if (colInd == columns - 1)
+                    colInd = 0;
+                canWrite = row == 1 || row == 0;
+                row++;
+                if(canWrite) {
+                    Arrays.stream(lines).forEach(System.out::print);
+                    System.out.println("");
+                }
+                resp.getWriter().write("<tr>");
+                for (ArrayList<String> re : res) {
+                    resp.getWriter().write("<td>" + re.get(i)+ "<td>");
+                    System.out.print("|" + re.get(i));
+                }
+                colInd++;
+                resp.getWriter().write("</tr>");
+                System.out.println("|");
+            }
+            resp.getWriter().write("</table>");
+            Arrays.stream(lines).forEach(System.out::print);
         } catch (SQLException e) {
             throw new ServletException(e);
         }
