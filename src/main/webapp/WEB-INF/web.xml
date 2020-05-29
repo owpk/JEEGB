@@ -15,6 +15,21 @@
 <!--    <servlet-name>BasicServlet</servlet-name>-->
 <!--    <url-pattern>home</url-pattern>-->
 <!--  </servlet-mapping>-->
+
+  <context-param>
+    <param-name>jdbcConnectionString</param-name>
+    <param-value>"jdbc:mysql://127.0.0.1:3306/sys?createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=true&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC";</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>dbUsername</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>dbPassword</param-name>
+    <param-value>178ueee34</param-value>
+  </context-param>
+
   <error-page>
     <error-code>403</error-code>
     <location>/errorHandler</location>

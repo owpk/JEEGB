@@ -24,7 +24,8 @@ public class MyFilter implements Filter {
         httpResp.getWriter().write("<a href=\"/cart\">| cart |</a>");
         httpResp.getWriter().write("<a href=\"/order\">| order |</a>");
         httpResp.getWriter().write("<a href=\"/catalog\">| catalog |</a>");
-        httpResp.getWriter().write("<a href=\"/product\">| product |</a></header>");
+        httpResp.getWriter().write("<a href=\"/product\">| product |</a>");
+        httpResp.getWriter().write("<a href=\"/sql\">| sql |</a></header>");
         filter.doFilter(httpReq, httpResp);
     }
 
