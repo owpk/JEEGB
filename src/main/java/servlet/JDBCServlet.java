@@ -48,7 +48,7 @@ public class JDBCServlet extends HttpServlet {
             boolean flag = true;
             while (rs.next()) {
                 for (int i = 1; i <= columns; i++)
-                    res[i-1].add(flag ? rs.getMetaData().getColumnLabel(i) : rs.getString(i));
+                    res[i - 1].add(flag ? rs.getMetaData().getColumnLabel(i) : rs.getString(i));
                 flag = false;
             }
 
@@ -64,7 +64,7 @@ public class JDBCServlet extends HttpServlet {
                                 space.append(" ");
                             re.set(i, re.get(i) + space);
                         } else {
-                            for (int j = 0; j < length - "null".length() ; j++)
+                            for (int j = 0; j < length - "null".length(); j++)
                                 space.append(" ");
                             re.set(i, "    " + space);
                         }
@@ -93,13 +93,13 @@ public class JDBCServlet extends HttpServlet {
                     colInd = 0;
                 canWrite = row == 1 || row == 0;
                 row++;
-                if(canWrite) {
+                if (canWrite) {
                     Arrays.stream(lines).forEach(System.out::print);
                     System.out.println("");
                 }
                 resp.getWriter().write("<tr>");
                 for (ArrayList<String> re : res) {
-                    resp.getWriter().write("<td>" + re.get(i)+ "<td>");
+                    resp.getWriter().write("<td>" + re.get(i) + "<td>");
                     System.out.print("|" + re.get(i));
                 }
                 colInd++;

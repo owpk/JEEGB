@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="388d3fc8-a8cf-4ab6-bc70-f9db85ab3db6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filter/MyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/MyFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/JDBCServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/JDBCServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +138,7 @@
       <workItem from="1590223477212" duration="7511000" />
       <workItem from="1590630085225" duration="28311000" />
       <workItem from="1590734098185" duration="2302000" />
-      <workItem from="1590736608810" duration="199000" />
+      <workItem from="1590736608810" duration="1196000" />
     </task>
     <servers />
   </component>
