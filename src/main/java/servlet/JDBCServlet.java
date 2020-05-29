@@ -43,16 +43,12 @@ public class JDBCServlet extends HttpServlet {
                 res[i] = new ArrayList<>();
             }
 
-            //print table ->
+            //print table -> cmd + html
             int colInd;
             boolean flag = true;
             while (rs.next()) {
-                for (int i = 1; i <= columns; i++) {
-                    if (flag)
-                        res[i-1].add(rs.getMetaData().getColumnLabel(i));
-                    else
-                        res[i-1].add(rs.getString(i));
-                }
+                for (int i = 1; i <= columns; i++)
+                    res[i-1].add(flag ? rs.getMetaData().getColumnLabel(i) : rs.getString(i));
                 flag = false;
             }
 
@@ -64,9 +60,8 @@ public class JDBCServlet extends HttpServlet {
                     for (int i = 0; i < re.size(); i++) {
                         StringBuilder space = new StringBuilder("  ");
                         if (re.get(i) != null) {
-                            for (int k = 0; k < length - re.get(i).length(); k++) {
+                            for (int k = 0; k < length - re.get(i).length(); k++)
                                 space.append(" ");
-                            }
                             re.set(i, re.get(i) + space);
                         } else {
                             for (int j = 0; j < length - "null".length() ; j++)
@@ -112,7 +107,8 @@ public class JDBCServlet extends HttpServlet {
                 System.out.println("|");
             }
             resp.getWriter().write("</table>");
-            Arrays.stream(lines).forEach(System.out::print);
+            System.out.println("");
+            //Arrays.stream(lines).forEach(System.out::print);
         } catch (SQLException e) {
             throw new ServletException(e);
         }
