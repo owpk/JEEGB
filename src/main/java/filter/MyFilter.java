@@ -21,8 +21,8 @@ public class MyFilter implements Filter {
         HttpServletResponse httpResp = (HttpServletResponse) resp;
         httpResp.addHeader("X-CharSet", "UTF-8");
         httpResp.setContentType("text/html; charset=utf-8");
-        
-        String[] pages = {"main","cart","order","catalog","product","sql"};
+
+        String[] pages = {"main", "cart", "order", "catalog", "product", "sql", "calc"};
 
         httpResp.getWriter().write("<br><header>");
         Arrays.stream(pages).forEach(a -> {
