@@ -1,16 +1,21 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: vzvz4
-  Date: 03.06.2020
-  Time: 18:32
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.util.Map" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<%request.setCharacterEncoding("UTF-8");%>
+
+<jsp:useBean scope="page" class="scriptletServlet.Register" id="profile"/>
+<jsp:setProperty property="*" name="profile"/>
+
+Имя пользователя:
+<jsp:getProperty property="user" name="profile"/>
+
+Пароль:
+<jsp:getProperty property="pass" name="profile"/>
+
 </body>
 </html>
