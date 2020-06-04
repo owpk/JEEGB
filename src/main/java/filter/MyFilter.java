@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 
 
-@WebFilter(urlPatterns = "/*")
+//@WebFilter(urlPatterns = "/*")
 public class MyFilter implements Filter {
 
     private transient FilterConfig filterConfig;
