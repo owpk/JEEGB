@@ -1,12 +1,13 @@
 package filter;
 
+import scriptletServlet.MenuBean;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
+import java.io.PrintWriter;
 import java.util.Arrays;
 
 
@@ -22,17 +23,12 @@ public class MyFilter implements Filter {
         httpResp.addHeader("X-CharSet", "UTF-8");
         httpResp.setContentType("text/html; charset=utf-8");
 
-        String[] pages = {"main", "cart", "order", "catalog", "product", "sql", "calc"};
-
-        httpResp.getWriter().write("<br><header>");
-        Arrays.stream(pages).forEach(a -> {
-            try {
-                httpResp.getWriter().print(String.format("<a href=\"/%s\">| %s |</a>", a, a));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-        httpResp.getWriter().write("</header></br>");
+        httpResp.getWriter().write("<header><ul>");
+        MenuBean menuBean = new MenuBean();
+        PrintWriter pw = httpResp.getWriter();
+        menuBean.getMenuList().forEach(a ->
+                pw.print(String.format("<li><a href=\"/%s\">| %s |</a></li>", a, a)));
+        httpResp.getWriter().write("</ul></header>");
         filter.doFilter(httpReq, httpResp);
     }
 
