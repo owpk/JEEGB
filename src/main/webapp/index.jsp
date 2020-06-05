@@ -13,5 +13,9 @@
 </head>
 <body>
 <%@include file="jsp/menu.jsp"%>
+<h1>Main page</h1>
+<div class="container p-3 my-3 border">
+
+</div>
 </body>
 </html>

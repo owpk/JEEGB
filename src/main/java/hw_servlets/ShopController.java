@@ -1,5 +1,7 @@
 package hw_servlets;
 
+import scriptletServlet.MenuBean;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,9 +20,13 @@ public class ShopController extends HttpServlet {
             req.getRequestDispatcher("/index.jsp").include(req, resp);
             return;
         }
-        String jsp = resource[resource.length - 1] + ".jsp";
+        String page = resource[resource.length - 1];
+        String jsp = page + ".jsp";
         if (resource[resource.length - 2].equals("shop")) {
             try {
+                if (page.equals(MenuBean.PagesSet.CATALOG.getName()))
+                    req.setAttribute("cat_bean", new HibernateCatalogRunner());
+                req.setAttribute("pageName" , page);
                 req.getRequestDispatcher("/jsp/" + jsp).include(req, resp);
             } catch (ServletException s) {
                 resp.getWriter().write(s.getMessage());

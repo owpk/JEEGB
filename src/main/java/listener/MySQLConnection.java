@@ -11,7 +11,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-@WebListener
+//@WebListener
 public class MySQLConnection implements ServletContextListener {
     private Logger logger = LoggerFactory.getLogger(MySQLConnection.class);
 
