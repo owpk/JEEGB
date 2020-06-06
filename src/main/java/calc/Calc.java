@@ -41,7 +41,7 @@ public class Calc extends HttpServlet {
             out.println("<div>Число №1 = " + val1 + " </div>");
             out.println("<div>Число №2 = " + val2 + " </div>");
             out.println("<div>Ответ = " + result + " </div>");
-            out.println("<div><a href='../index.jsp'>Вернуться на страницу с калькулятором</div>");
+            out.println("<div><a href='../main.jsp'>Вернуться на страницу с калькулятором</div>");
             out.println("</body>");
             out.println("</html>");
         }

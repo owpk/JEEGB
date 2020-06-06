@@ -5,7 +5,7 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
-          <factory-entry name="JEEGB" value="8dee3faf-6c02-4424-b4e6-0e2af0f69d62" />
+          <factory-entry name="JEEGB" value="3ad70d71-80a5-4577-adaa-23ceb838eef8" />
         </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
@@ -14,7 +14,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" value="8dee3faf-6c02-4424-b4e6-0e2af0f69d62" />
+          <unit-entry name="hibernate.cfg.xml" value="3ad70d71-80a5-4577-adaa-23ceb838eef8" />
         </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate.cfg.xml" />

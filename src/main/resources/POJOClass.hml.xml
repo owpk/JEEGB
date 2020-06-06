@@ -10,7 +10,7 @@
         <id name="id" type="int" column="id">
             <generator class="native"/> </id>
         <property name="name" column="name" type="string"/>
-        <property name="cost" column="cost" type="int"/>
+        <property name="cost" column="cost" type="string"/>
         <property name="description" column="description" type="string"/>
     </class>
 </hibernate-mapping>
