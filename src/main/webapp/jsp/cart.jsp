@@ -1,9 +1,4 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>JSP Page</title>
-</head>
 <body>
 <%@include file="menu.jsp" %>
 <h1><%=request.getAttribute("pageName")%></h1>
