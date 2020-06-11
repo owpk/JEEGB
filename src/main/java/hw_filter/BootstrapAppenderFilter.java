@@ -7,7 +7,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter("/*")
+@WebFilter({"/shop", "/shop/*"})
 public class BootstrapAppenderFilter implements Filter {
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain filterChain) throws IOException, ServletException {
@@ -15,7 +15,8 @@ public class BootstrapAppenderFilter implements Filter {
         httpResp.setCharacterEncoding("UTF-8");
         req.setAttribute("menuBean", new MenuBean());
 
-        httpResp.getWriter().write("<head>\n" +
+        httpResp.getWriter().write("<!DOCTYPE html>\n"+
+                        "<html>\n"+"<head>\n" +
                 "    <!-- Required meta tags -->\n" +
                 "    <meta charset=\"utf-8\">\n" +
                 "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n" +

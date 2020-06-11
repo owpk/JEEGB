@@ -3,41 +3,62 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-<default-context-path></default-context-path>
-  <display-name>Archetype Created Web Application</display-name>
+    <default-context-path></default-context-path>
+    <display-name>Archetype Created Web Application</display-name>
 
-<!--  <servlet>-->
-<!--    <servlet-name>BasicServlet</servlet-name>-->
-<!--    <servlet-class>servlet.BasicServlet</servlet-class>-->
-<!--  </servlet>-->
-<!--  &lt;!&ndash; Привязываем сервлет к URL &ndash;&gt;-->
-<!--  <servlet-mapping>-->
-<!--    <servlet-name>BasicServlet</servlet-name>-->
-<!--    <url-pattern>home</url-pattern>-->
-<!--  </servlet-mapping>-->
+    <!--  <servlet>-->
+    <!--    <servlet-name>BasicServlet</servlet-name>-->
+    <!--    <servlet-class>servlet.BasicServlet</servlet-class>-->
+    <!--  </servlet>-->
+    <!--  &lt;!&ndash; Привязываем сервлет к URL &ndash;&gt;-->
+    <!--  <servlet-mapping>-->
+    <!--    <servlet-name>BasicServlet</servlet-name>-->
+    <!--    <url-pattern>home</url-pattern>-->
+    <!--  </servlet-mapping>-->
 
-  <context-param>
-    <param-name>jdbcConnectionString</param-name>
-    <param-value>jdbc:mysql://127.0.0.1:3306/shop?useSSL=false&amp;serverTimezone=UTC&amp;useLegacyDatetimeCode=false;</param-value>
-  </context-param>
+    <context-param>
+        <param-name>jdbcConnectionString</param-name>
+        <param-value>jdbc:mysql://127.0.0.1:3306/shop?useSSL=false&amp;serverTimezone=UTC&amp;useLegacyDatetimeCode=false;</param-value>
+    </context-param>
 
-  <context-param>
-    <param-name>dbUsername</param-name>
-    <param-value>root</param-value>
-  </context-param>
-  <context-param>
-    <param-name>dbPassword</param-name>
-    <param-value>178ueee34</param-value>
-  </context-param>
+    <context-param>
+        <param-name>dbUsername</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbPassword</param-name>
+        <param-value>178ueee34</param-value>
+    </context-param>
 
-  <error-page>
-    <error-code>403</error-code>
-    <location>/errorHandler</location>
-  </error-page>
-  <error-page>
-    <error-code>404</error-code>
-    <location>/errorHandler</location>
-  </error-page>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/errorHandler</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/errorHandler</location>
+    </error-page>
+
+    <servlet>
+        <servlet-name>faces-servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>faces-servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>jsf_pages/index.xhtml</welcome-file>
+    </welcome-file-list>
+
+    <!-- validation -->
+    <context-param>
+        <param-name>javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL</param-name>
+        <param-value>true</param-value>
+    </context-param>
 </web-app>
 
         

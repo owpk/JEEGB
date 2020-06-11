@@ -3,12 +3,11 @@ package scriptletServlet;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 public class MenuBean {
     private List<String> menuList;
-    private AtomicInteger index;
+
     public enum PagesSet {
         CATALOG("catalog"),
         CART("cart"),
@@ -28,12 +27,8 @@ public class MenuBean {
         menuList.addAll(Arrays.stream(PagesSet.values())
                 .map(x -> x.name)
                 .collect(Collectors.toList()));
-        index = new AtomicInteger(-1);
     }
 
-    public AtomicInteger getIndex() {
-        return index;
-    }
 
     public List<String> getMenuList() {
         return menuList;

@@ -20,29 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="388d3fc8-a8cf-4ab6-bc70-f9db85ab3db6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/byte-buddy-1.10.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/byte-buddy-1.10.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/dom4j-2.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/hibernate-core-5.4.17.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jandex-2.1.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/persistence-api-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jsf/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jsf/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jsf/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jsf/SomeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jsf/ValidateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf_pages/index.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf_pages/menu.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf_pages/productAdd.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf_pages/productValidate.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf_pages/result.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf_pages/userValid.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hw_filter/BootstrapAppenderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw_filter/BootstrapAppenderFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scriptletServlet/MenuBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scriptletServlet/MenuBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/catalog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/catalog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/op.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/op.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +51,8 @@
       <list>
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="AnnotationType" />
+        <option value="XHTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -73,7 +72,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="DefaultHtmlFileTemplate" value="XHTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -96,18 +95,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\resources" />
+      <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\webapp\scriptJsp" />
+      <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\webapp" />
+      <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="jsf" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\webapp\WEB-INF\lib" />
       <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\resources" />
       <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\resources\META-INF" />
       <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\webapp\jsp" />
       <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\webapp" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\resources" />
-      <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\webapp\scriptJsp" />
-      <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\webapp" />
-      <recent name="C:\Users\vzvz4\Desktop\PAPKA\GitHub\JEEGB\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -219,34 +221,38 @@
     </state>
     <state x="150" y="35" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1590037993717" />
     <state x="35" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591424129710" />
-    <state x="547" y="119" width="574" height="586" key="#com.intellij.ide.util.MemberChooser" timestamp="1591428221396">
+    <state x="547" y="119" width="574" height="586" key="#com.intellij.ide.util.MemberChooser" timestamp="1591524524723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="547" y="119" width="574" height="586" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591428221396" />
+    <state x="547" y="119" width="574" height="586" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591524524723" />
+    <state x="523" y="237" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591524421465">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="237" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1591524421465" />
     <state x="522" y="167" key="FileChooserDialogImpl" timestamp="1591157799189">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="522" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591157799189" />
-    <state width="1216" height="164" key="GridCell.Tab.0.bottom" timestamp="1591434034255">
+    <state width="1370" height="164" key="GridCell.Tab.0.bottom" timestamp="1591526046345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1290" height="179" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590049939474" />
-    <state width="1216" height="164" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591434034255" />
-    <state width="1216" height="164" key="GridCell.Tab.0.center" timestamp="1591434034255">
+    <state width="1370" height="164" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591526046345" />
+    <state width="1370" height="164" key="GridCell.Tab.0.center" timestamp="1591526046345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1290" height="179" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590049939473" />
-    <state width="1216" height="164" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591434034255" />
-    <state width="1216" height="164" key="GridCell.Tab.0.left" timestamp="1591434034255">
+    <state width="1370" height="164" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591526046345" />
+    <state width="1370" height="164" key="GridCell.Tab.0.left" timestamp="1591526046345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1290" height="179" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590049939473" />
-    <state width="1216" height="164" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591434034255" />
-    <state width="1216" height="164" key="GridCell.Tab.0.right" timestamp="1591434034255">
+    <state width="1370" height="164" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591526046345" />
+    <state width="1370" height="164" key="GridCell.Tab.0.right" timestamp="1591526046345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1290" height="179" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590049939473" />
-    <state width="1216" height="164" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591434034255" />
+    <state width="1370" height="164" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591526046345" />
     <state width="1488" height="257" key="GridCell.Tab.1.bottom" timestamp="1591427187180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -267,10 +273,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1591346869028" />
-    <state x="272" y="67" key="Maven.ArtifactSearchDialog" timestamp="1591331662374">
+    <state x="272" y="67" key="Maven.ArtifactSearchDialog" timestamp="1591523613324">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="272" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1591331662374" />
+    <state x="272" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1591523613324" />
     <state x="247" y="0" width="1038" height="818" key="SettingsEditor" timestamp="1591343951643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -280,15 +286,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="382" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1591343931210" />
-    <state x="396" y="192" width="756" height="756" key="run.anything.popup" timestamp="1590223747771">
+    <state x="396" y="192" width="756" height="756" key="run.anything.popup" timestamp="1591524469678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="352" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1590038153961" />
-    <state x="396" y="192" width="756" height="756" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1590223747771" />
-    <state x="42" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1591295911094">
+    <state x="396" y="192" width="756" height="756" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591524469678" />
+    <state x="42" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1591523429157">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="42" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591295911094" />
+    <state x="42" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591523429157" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
