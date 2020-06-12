@@ -1,4 +1,4 @@
-package hw_jsf;
+package hw_jsf.models;
 
 /**
  * marker
