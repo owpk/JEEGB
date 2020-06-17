@@ -3,7 +3,7 @@
         "-//Hibernate/Hibernate Mapping DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="hw_servlets.CatalogModel" table="catalog">
+    <class name="hw_jsf.models.Product" table="catalog">
         <meta attribute="class-description">
             This class contains catalog's details.
         </meta>
