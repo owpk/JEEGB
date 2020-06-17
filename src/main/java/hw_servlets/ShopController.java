@@ -36,7 +36,7 @@ public class ShopController extends HttpServlet {
             try {
 
                 if (page.equals(MenuBean.PagesSet.CATALOG.getName()))
-                    req.setAttribute("cat_bean", new HibernateCatalogRunner());
+                    //req.setAttribute("cat_bean", new BaseRepository<>());
 
                 req.setAttribute("pageName", page);
                 req.getRequestDispatcher("/jsp/" + jsp).include(req, resp);
