@@ -1,4 +1,4 @@
-package hw_jsf.models;
+package hw_jsf.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
