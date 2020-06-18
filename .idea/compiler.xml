@@ -9,8 +9,5 @@
         <module name="JEEGB" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="JEEGB" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

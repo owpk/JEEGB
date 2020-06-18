@@ -1,4 +1,4 @@
-package hw_jsf.models;
+package hw_jsf.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +11,7 @@ import javax.validation.constraints.Pattern;
 @Table(name = "catalog")
 @Data
 @NoArgsConstructor
-public class Product implements BaseItem{
+public class Product implements BaseItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -29,5 +29,9 @@ public class Product implements BaseItem{
 
     @Column(name = "description")
     private String description;
+
+    @NotNull
+    @ManyToOne
+    private Category category;
 
 }

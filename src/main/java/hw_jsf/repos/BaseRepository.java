@@ -1,54 +1,51 @@
 package hw_jsf.repos;
 
-import hw_jsf.models.BaseItem;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
-
+import hw_jsf.entity.BaseItem;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+import java.util.Collection;
 import java.util.List;
 
 public abstract class BaseRepository<T extends BaseItem> {
 
-    private final SessionFactory sessionFactory;
+    @PersistenceContext(unitName = "ds")
+    protected EntityManager entityManager;
 
-    private String modelName;
-
-    protected abstract String obtainName();
-
-    public BaseRepository() {
-        modelName = obtainName();
-        sessionFactory = new Configuration().configure().buildSessionFactory();
+    protected T getEntity(TypedQuery<T> query) {
+        List<T> resultList = query.getResultList();
+        if (resultList.isEmpty()) {
+            return null;
+        }
+        return resultList.get(0);
     }
 
-    public List<T> itemList() {
-        Session session = sessionFactory.openSession();
-        Transaction transaction;
-        transaction = session.beginTransaction();
+    public abstract T getById(long id);
 
-        List<T> pojos = session.createQuery("FROM " + modelName).list();
-        transaction.commit();
-        session.close();
-        return pojos;
+    public abstract Collection<T> getAll();
+
+    public abstract long count();
+
+    public T merge(T entity) {
+        if (entity == null)
+            return null;
+        try {
+            return entityManager.merge(entity);
+        } catch (Exception ex) {
+            throw new IllegalStateException(ex);
+        }
     }
 
-    public void add(T element) {
-        Session session = sessionFactory.openSession();
-        Transaction transaction;
-        transaction = session.beginTransaction();
+    public void remove(T entity) {
+        if (entity == null)
+            return;
+        try {
+            T attached = getById(entity.getId());
+            if (attached != null)
+                entityManager.remove(attached);
 
-        session.save(element);
-        transaction.commit();
-        session.close();
-    }
-
-    public void remove(T element) {
-        Session session = sessionFactory.openSession();
-        Transaction transaction = null;
-        transaction = session.beginTransaction();
-
-        session.delete(element);
-        transaction.commit();
-        session.close();
+        } catch (Exception ex) {
+            throw new IllegalStateException(ex);
+        }
     }
 }

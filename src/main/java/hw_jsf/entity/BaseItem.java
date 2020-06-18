@@ -1,7 +1,8 @@
-package hw_jsf.models;
+package hw_jsf.entity;
 
 /**
  * marker
  */
 public interface  BaseItem {
+    int getId();
 }

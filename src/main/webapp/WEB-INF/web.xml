@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <default-context-path></default-context-path>
+    <default-context-path>/</default-context-path>
     <display-name>Archetype Created Web Application</display-name>
 
     <!--  <servlet>-->
@@ -16,19 +16,19 @@
     <!--    <url-pattern>home</url-pattern>-->
     <!--  </servlet-mapping>-->
 
-    <context-param>
-        <param-name>jdbcConnectionString</param-name>
-        <param-value>jdbc:mysql://127.0.0.1:3306/shop?useSSL=false&amp;serverTimezone=UTC&amp;useLegacyDatetimeCode=false;</param-value>
-    </context-param>
+<!--    <context-param>-->
+<!--        <param-name>jdbcConnectionString</param-name>-->
+<!--        <param-value>jdbc:mysql://127.0.0.1:3306/shop?useSSL=false&amp;serverTimezone=UTC&amp;useLegacyDatetimeCode=false;</param-value>-->
+<!--    </context-param>-->
 
-    <context-param>
-        <param-name>dbUsername</param-name>
-        <param-value>root</param-value>
-    </context-param>
-    <context-param>
-        <param-name>dbPassword</param-name>
-        <param-value>178ueee34</param-value>
-    </context-param>
+<!--    <context-param>-->
+<!--        <param-name>dbUsername</param-name>-->
+<!--        <param-value>root</param-value>-->
+<!--    </context-param>-->
+<!--    <context-param>-->
+<!--        <param-name>dbPassword</param-name>-->
+<!--        <param-value>178ueee34</param-value>-->
+<!--    </context-param>-->
 
     <error-page>
         <error-code>403</error-code>
