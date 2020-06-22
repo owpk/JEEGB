@@ -10,7 +10,6 @@ import java.io.Serializable;
 import java.util.List;
 
 @Stateless
-@TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class ProductRepo extends BaseRepo<Product> implements Serializable {
 
     public List<Product> getJPQLAll() {
