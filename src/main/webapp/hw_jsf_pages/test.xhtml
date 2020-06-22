@@ -16,12 +16,12 @@
     <h1>CATALOG</h1>
     <div class="container p-3 my-3 border">
 
-        <h:selectOneMenu value = "#{prod_bean.category}">
-            <f:selectItems value = "#{prod_bean.categoryList}" var="cat" itemValue="#{cat.name}"/>
+        <h:selectOneMenu value = "#{prod.category}">
+            <f:selectItems value = "#{prod.categoryList}" var="cat" itemValue="#{cat.name}"/>
         </h:selectOneMenu>
 
         <h:form class="col-12" id="listForm">
-            <h:dataTable styleClass="table table-bordered" value="#{prod_bean.productsList}" var="list">
+            <h:dataTable styleClass="table table-bordered" value="#{prod.productsList}" var="list">
                 <h:column>
                     <f:facet name="header">id</f:facet>
                     #{list.id}

@@ -9,7 +9,7 @@ import javax.transaction.Transactional;
 
 public abstract class BaseRepo<T extends BaseItem> {
 
-    @PersistenceContext(unitName = "ds")
+    @PersistenceContext(unitName = "entity")
     protected EntityManager entityManager;
 
     public Product getById(long id) {
