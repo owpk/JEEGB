@@ -30,10 +30,6 @@ public class ProductBean implements Serializable {
         productsList = productRepo.getJPQLAll();
     }
 
-    public void preloadCategoriesList() {
-        categoryList = categoryRepo.getCategoryList();
-    }
-
 
     public Collection<Category> getCategoryList() {
         return categoryList;

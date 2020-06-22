@@ -1,6 +1,5 @@
 package test;
 
-import hw_jsf.entity.BaseItem;
 import hw_jsf.entity.Category;
 
 import javax.ejb.Stateless;
@@ -11,7 +10,7 @@ import java.util.List;
 
 @Stateless
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
-public class CategoryRepo extends AbsRepo<Category> implements Serializable {
+public class CategoryRepo extends BaseRepo<Category> implements Serializable {
 
     public List<Category> getCategoryList() {
         return entityManager.createQuery("select c from Category c", Category.class).getResultList();

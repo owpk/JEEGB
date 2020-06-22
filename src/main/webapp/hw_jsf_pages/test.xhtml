@@ -17,7 +17,6 @@
     <div class="container p-3 my-3 border">
 
         <h:selectOneMenu value = "#{prod_bean.category}">
-            <f:event type="preRenderView" listener="#{prod_bean.preloadCategoriesList}"/>
             <f:selectItems value = "#{prod_bean.categoryList}" var="cat" itemValue="#{cat.name}"/>
         </h:selectOneMenu>
 

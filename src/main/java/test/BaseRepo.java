@@ -7,7 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
-public abstract class AbsRepo <T extends BaseItem> {
+public abstract class BaseRepo<T extends BaseItem> {
 
     @PersistenceContext(unitName = "ds")
     protected EntityManager entityManager;
@@ -22,10 +22,19 @@ public abstract class AbsRepo <T extends BaseItem> {
     }
 
     @Transactional
+    public void delete(T element) {
+        if (element != null)
+        entityManager.remove(element);
+    }
+
+    @Transactional
     public void add(T element) {
+        if (element != null)
         entityManager.persist(element);
     }
 
     @Transactional
-    public void update
+    public void merge(T element) {
+        entityManager.merge(element);
+    }
 }
