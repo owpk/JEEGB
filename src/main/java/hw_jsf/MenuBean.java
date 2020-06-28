@@ -16,8 +16,8 @@ import java.util.stream.Collectors;
 public class MenuBean {
 
     public enum Pages {
-        CATALOG("catalog.xhtml"),
-        CART("cart.xhtml");
+        CART("cart.xhtml"),
+        TEST("test.xhtml");
         private final String url;
 
         Pages(String url) {
