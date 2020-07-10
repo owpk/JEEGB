@@ -28,4 +28,8 @@ public class ProductService {
   public List<ProdRepresentation> findAll() {
     return productRepo.findAllProductRepresentation();
   }
+
+  public void deleteById(long id) {
+    productRepo.deleteById(id);
+  }
 }
