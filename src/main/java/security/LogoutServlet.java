@@ -1,17 +1,22 @@
-package lesson6.controller;
+package security;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.HttpConstraint;
+import javax.servlet.annotation.ServletSecurity;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/lesson6")
-public class MainController extends HttpServlet {
+@WebServlet("/logout")
+@ServletSecurity(@HttpConstraint(rolesAllowed = { "GUEST", "ADMIN" }))
+public class LogoutServlet extends HttpServlet {
 
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    req.getRequestDispatcher("/lesson6/main.xhtml").forward(req, resp);
+    req.logout();
+    req.getSession().invalidate();
+    resp.sendRedirect(getServletContext().getContextPath());
   }
 }

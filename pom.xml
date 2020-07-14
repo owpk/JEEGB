@@ -213,6 +213,15 @@
             <artifactId>swagger-annotations</artifactId>
             <version>1.5.22</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+        <!-- https://mvnrepository.com/artifact/javax.annotation/jsr250-api -->
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+
         <!-- /jsf -->
 
     </dependencies>
